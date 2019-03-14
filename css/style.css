@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* flex container */
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+
+/**********************************/
+/*            HEADER              */
+/**********************************/
+
+/* header */
+#head {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+}
+
+
+/*_______________*/
+/*    Bandeau    */
+/*_______________*/
+
+/* bandeau en haut du header */
+#banniere {
+    margin-top: 15px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Open Sans',sans-serif;
+    color: #91898d;
+    height: 20px;
+    border-bottom: 0.1px #91898d solid;
+}
+
+/* Slogan de la banniere */
+#banniere > p{
+    margin-left: 5%;
+    margin-bottom: 1%
+}
+
+/* Contact et lien sociaux */
+#contact {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6%;
+}
+
+/* titre contact */
+#contact h2{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*numero de téléphone dans la banniere */
+#contact p{
+    margin-bottom: 4px;
+    margin-left: 2%;
+    font-weight:600;
+}
+
+/*div qui contient les logos des reseaux sociaux */
+#social {
+    margin-left: 3%;
+}
+
+/* image des logos des reseaux sociaux*/
+#social img{
+    width: 1.5em;
+}
+
+
+/*________________________*/
+/*    Centre du Header    */
+/*________________________*/
+
+/* div centre du header au dessus de la nav */
+#center_head {
+    justify-content: flex-end;
+    height: 180px;
+}
+
+/* div qui contient le logo du header */
+#logo_header {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+/* Logo du site dans le header */
+#logo_header img {
+    margin-left: 240px;
+    width: 13.2em;
+    margin-bottom: 20px;
+}
+
+/* div qui contient les lien vers le compte et le panier */
+#log_shop {
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* classe du compte et du panier*/
+.info {
+    text-align: center;
+    width: 36%;
+}
+.info a {
+    font-size: 15px;
+    font-family: 'Open Sans',sans-serif;
+    text-decoration: none;
+    color:#3f3f3f; 
+}
+
+/* div panier */
+#shop {
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+/* div mon compte */
+#user {
+    padding-bottom: 10px;
+}
+
+
+/*___________________*/
+/*    Navigattion    */
+/*___________________*/
+
+/* div navigation */
+#nav{
+    justify-content: center
+}
+
+/* lien de  la navigation */
+#nav a {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 65px;
+    margin-right: 65px;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    color:#3f3f3f; 
+}
+
+
+/**************************************/
+/*            CORP DE PAGE            */
+/**************************************/
+
+
+/***********************/
+/*        INDEX        */
+/***********************/
+
+/* div qui contient le corp de la page index */
+#main_index{
+    margin-top: 15px; 
+    flex-direction: column;
+    align-items: center;
+}
+/*_________________*/
+/*    Carrousel    */
+/*_________________*/
+
+/* premier div qui contient le carrousel de la page index */
+#first_index {
+    justify-content: center;
+}
+
+/* carrousel de la page index */
+#carrou {
+    width: 94%;
+}
+
+/* image du carrousel de la page index*/
+#carrou img{
+    width: 100%;
+}
+
+/* bouton du carrousel de la page index*/
+.slick-prev::before, .slick-next::before{
+    color: #4f4c4c
+}
+
+/*____________________*/
+/*    Presentation    */
+/*____________________*/
+
+/* div qui le texte de présentation */
+#presentation {
+    flex-direction: column;
+    text-align: center;
+    color:#3f3f3f; 
+    font-family: 'Open Sans',sans-serif;
+}
+
+
+/*__________________*/
+/*    Decouverte    */
+/*__________________*/
+
+/* div qui contient les trois vignettes*/
+#decouverte {
+    justify-content: center;
+    align-content: space-around;
+    margin-bottom: 1%;
+}
+
+/* classe des vignettes */
+.vignettes {
+    flex-direction: column;
+    width: 30%;
+    height: 70px;
+    margin-right: 15px;
+    margin-left: 15px; 
+}
+
+/* boutons des vignettes */
+.vignettes input {
+    position: relative;
+    left: 35%;
+    bottom: 100%;
+    background: #646567;
+    width: 30%;
+    padding: 2%;
+    color: white;
+    border: 1px solid white;
+}
+
+/* lors du passege de la souris sur une vignette change son bouton */
+.vignettes:hover input{
+    background: white;
+    color: #646567;
+}
+
+/*___________________*/
+/*    Plein Phare    */
+/*___________________*/
+
+/* div qui contient les articles et le titre a mettre en avant */
+#plein_phare {
+    width: 94%;
+    border-top: 0.5px ridge #adadad;
+    margin-top: 25%;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* titre des articles mise en avant */
+#plein_phare h2 {
+    margin-top: 10px;
+    font: 500 30px 'Hind',sans-serif;
+    justify-content: center;
+}
+
+/* div qui les produits */
+#produits{
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+/* classe des div d'un produit  */
+.produit {
+    margin: 0 10px;
+    width: 30%;
+    border: 1.5px dashed #a3a4a5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image des produits */
+.produit img {
+    width: 70%;
+}
+
+/* div qui contient le texte des produits */
+.text {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font: 700 16px 'Open Sans',sans-serif;
+    color: #333;
+    margin-bottom: 5px;
+}
+    
+/* prix du produit */
+.prix {
+    font: 500 15px 'Open Sans',sans-serif;
+    color: #91898d;
+}
+
+
+/**********************************/
+/*            FOOTER              */
+/**********************************/
+
+.apropos {
+    margin-top: 130px;
+    margin-left: 30px;
+}
+
+.services {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.chouduvolant {
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "OpenSans-Light";
+    width: 100%;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+strong {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.debutfooter {
+    font-family: "OpenSans-Light";
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -130px;
+    padding-top: -130px;
+
+}
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -30px;
+    
+    
+}
+
+#cadenas {
+    margin-left: 50px;
+   
+}
+#iphone {
+    margin-right: 250px;
+}
+#smile {
+    margin-right: 90px;
+    
+}
+#camion {
+    margin-left: 70px;
+    
+}
+
+#trait_dessus { 
+    border-top: 0.5px  grey; 
+    width : 100%;
+    margin-top: 50px;
+    height: 55px;
+}
