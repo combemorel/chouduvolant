@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Hind:500" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="../slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../slick/slick-theme.css"/>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -104,69 +104,62 @@
             </div>
         </article>
     </main>
-    <div id="trait_dessus"><hr></div> <div id="trait_dessus"><hr></div>
-        <div class="debutfooter">
-            <span class="reassurrances-text"> <a href="/content/5-paiement-securise">
-                <strong>PAIEMENT SECURISE</strong>Visa, Mastercard, Paypal</a> </span>
-                <li class="item item-2"> 
-            <span class="reassurrances-img"></span> 
-            <span class="reassurrances-text"> <a href="/content/1-livraison"><strong>LIVRAISON</strong> En 24-72 heures</a> </span></li>
-                <li class="item item-3"> <span class="reassurrances-img"></span> 
-            <span class="reassurrances-text"> <a href="/content/7-satisfait-ou-rembourse"><strong>SATISFAIT OU REMBOURSE</strong> Échanges et retours faciles</a> </span></li>
-                <li class="item item-4"> <span class="reassurrances-img"></span> 
-            <span class="reassurrances-text"> <a href="/nous-contacter"><strong>CONTACT</strong> Demande de conseils</a>
-            </span>
-        </div>
-        <div class="img">
-            <img src="https://img.icons8.com/color/26/000000/lock.png" id="cadenas">
-            <img src="https://img.icons8.com/color/26/000000/truck.png" id="camion">
-            <img src="https://img.icons8.com/color/26/000000/happy.png" id="smile">
-            <img src="https://img.icons8.com/color/26/000000/touchscreen-smartphone.png" id="iphone">
-        </div>
-                
-        
-            <footer class="footer">
-                <section>
-                   <div class="apropos">
-                    <h2>À propos</h2>
-                        <ul class="toggle-footer">
-                            <li class="item"> <a href="https://www.chouduvolant.com/content/2-mentions-legales" title="Mentions légales"> Mentions légales </a></li>
-                            <li class="item"> <a href="https://www.chouduvolant.com/content/6-fabrication-francaise" title="Nos jouets sont made in France"> Nos jouets sont made in France </a></li>
-                            <li class="item"> <a href="https://www.chouduvolant.com/content/11-securite-des-jouets" title="Sécurité des jouets "> Sécurité des jouets </a></li>
-                            <li class="item"> <a href="https://www.chouduvolant.com/content/10-confidentialites-et-donnees-personnelles" title="Confidentialité et données personnelles"> Confidentialité et données personnelles </a></li>
-                            <li class="item"> <a href="https://www.chouduvolant.com/content/18-bascules-et-porteurs" title="Nos jouets en bois"> Nos jouets en bois </a></li>
-                            <li class="item"> <a href="https://www.chouduvolant.com/content/17-histoire" title="Notre Histoire"> Notre Histoire </a></li>
-                            <li class="item"> <a href="https://www.chouduvolant.com/content/24-la-conception-de-nos-jouets" title="Notre Concept"> Notre Concept </a></li>
-                            <li class="item"> <a href="https://www.chouduvolant.com/content/19-demarche-et-philosophie" title="Nos Valeurs"> Nos Valeurs </a></li>
-                        </ul>
-                    </div> 
-                </section>
-                
-                <section>
-                    <div class="services">
-                    <h2>Services</h2>
-                        <ul class="toggle-footer">
-                            <li><a href="https://www.chouduvolant.com/content/8-infos-pratiques" title="">Infos pratiques</a></li>
-                            <li><a href="https://www.chouduvolant.com/content/21-avis-clients" title="">Avis clients</a></li>
-                            <li><a href="https://www.chouduvolant.com/content/9-questions-frequentes" title="">Questions fréquentes</a></li>
-                        </ul>
-                    </div> 
-                </section>
-                <script type="text/javascript">ga('send', 'pageview');
-                </script> 
-                
-                <section>
-                   <div class="chouduvolant">
-                    <h2 class="no-after">Chou du volant</h2>
-                        <ul>
-                            <li>12, rue de la Croix Carrée</li>
-                            <li>35700 Rennes</li><li>Tél : 02 23 24 84 91</li>
-                            <li>Mail : contact@chouduvolant.com <span class="mailto"></span>
-                            </li>
-                        </ul>
-                    </div> 
-                </section>
-            </footer>
+    <div class="debutfooter flex">
+        <a href="/content/5-paiement-securise" class="banniere_footer flex">
+            <img src="../img/cadenas.png" alt="" id="cadenas">
+            <div>
+                <p>PAIEMENT SECURISE</p>
+                <p>Visa, Mastercard, Paypal</p>
+            </div>
+        </a>
+        <a href="/content/1-livraison" class="banniere_footer flex">
+            <img src="../img/camion.png" alt="" id="camion">
+            <div>
+                <p>LIVRAISON</p> 
+                <p>En 24-72 heures</p>
+            </div>
+        </a>
+        <a href="/content/7-satisfait-ou-rembourse" class="banniere_footer flex">
+            <img src="../img/smiley.png" alt="" id="smile">
+            <div>
+                <p>SATISFAIT OU REMBOURSE</p> 
+                <p>Échanges et retours faciles</p>
+            </div>
+        </a>
+        <a href="/nous-contacter" class="banniere_footer flex">
+            <img src="../img/tel.png" alt="" id="iphone">
+            <div>
+                <p>CONTACT</p> 
+                <p>Demande de conseils</p>
+            </div>
+        </a>
+    </div>               
+    <footer class="footer flex">
+            <div id="apropos" class="list flex">
+                <h2>À propos</h2>
+                    <a href="https://www.chouduvolant.com/content/2-mentions-legales" title="Mentions légales"> Mentions légales </a>
+                    <a href="https://www.chouduvolant.com/content/6-fabrication-francaise" title="Nos jouets sont made in France"> Nos jouets sont made in France </a>
+                    <a href="https://www.chouduvolant.com/content/11-securite-des-jouets" title="Sécurité des jouets "> Sécurité des jouets </a>
+                    <a href="https://www.chouduvolant.com/content/10-confidentialites-et-donnees-personnelles" title="Confidentialité et données personnelles"> Confidentialité et données personnelles </a>
+                    <a href="https://www.chouduvolant.com/content/18-bascules-et-porteurs" title="Nos jouets en bois"> Nos jouets en bois </a>
+                    <a href="https://www.chouduvolant.com/content/17-histoire" title="Notre Histoire"> Notre Histoire </a>
+                    <a href="https://www.chouduvolant.com/content/24-la-conception-de-nos-jouets" title="Notre Concept"> Notre Concept </a>
+                    <a href="https://www.chouduvolant.com/content/19-demarche-et-philosophie" title="Nos Valeurs"> Nos Valeurs </a>
+            </div> 
+            <div id="services" class="list flex">
+                <h2>Services</h2>
+                <a href="https://www.chouduvolant.com/content/8-infos-pratiques" title="">Infos pratiques</a>
+                <a href="https://www.chouduvolant.com/content/21-avis-clients" title="">Avis clients</a>
+                <a href="https://www.chouduvolant.com/content/9-questions-frequentes" title="">Questions fréquentes</a>
+            </div>  
+            <div id="chouduvolant" class="list">
+                <h2>Chou du volant</h2>
+                <p>12, rue de la Croix Carrée</p>
+                <p>35700 Rennes</p>
+                <p>Tél : 02 23 24 84 91</p>
+                <p>Mail : contact@chouduvolant.com</p> 
+            </div> 
+    </footer>
     
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

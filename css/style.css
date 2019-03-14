@@ -9,7 +9,11 @@
     width: 100%;
 }
 
-
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 /**********************************/
 /*            HEADER              */
 /**********************************/
@@ -19,7 +23,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 200px;
+    height: 180px;
 }
 
 
@@ -36,7 +40,7 @@
     font-size: 12px;
     font-family: 'Open Sans',sans-serif;
     color: #91898d;
-    height: 20px;
+    height: 10px;
     border-bottom: 0.1px #91898d solid;
 }
 
@@ -56,14 +60,12 @@
 
 /* titre contact */
 #contact h2{
-    margin-top: 15px;
     font-size: 14px;
     font-weight: normal;
 }
 
 /*numero de téléphone dans la banniere */
 #contact p{
-    margin-bottom: 4px;
     margin-left: 2%;
     font-weight:600;
 }
@@ -86,7 +88,7 @@
 /* div centre du header au dessus de la nav */
 #center_head {
     justify-content: flex-end;
-    height: 180px;
+    height: 120px;
 }
 
 /* div qui contient le logo du header */
@@ -100,7 +102,8 @@
 #logo_header img {
     margin-left: 240px;
     width: 13.2em;
-    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 /* div qui contient les lien vers le compte et le panier */
@@ -167,7 +170,7 @@
 
 /* div qui contient le corp de la page index */
 #main_index{
-    margin-top: 15px; 
+    
     flex-direction: column;
     align-items: center;
 }
@@ -205,6 +208,7 @@
     text-align: center;
     color:#3f3f3f; 
     font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
 }
 
 
@@ -309,89 +313,51 @@
 /*            FOOTER              */
 /**********************************/
 
-.apropos {
-    margin-top: 130px;
-    margin-left: 30px;
+#camion{
+    margin-right: 10px;
+}
+.debutfooter {
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 0.5px ridge #e2dee0f1;
+    padding-bottom: 30px;
+    border-bottom: 0.5px ridge #e2dee0ab;
 }
 
-.services {
-    margin-top: 20px;
-    margin-left: 30px;
+.banniere_footer {
+    font: 500 15px 'Open Sans',sans-serif;
+    text-decoration: none;
+    color: #666565;
+    width: 20%;
 }
-
-.chouduvolant {
-    margin-top: 40px;
-    margin-left: 30px;
-
+.banniere_footer img {
+    width: 15%;
+   
 }
 
 .footer {
-    display: flex;
+    margin-top: 10px;
     justify-content: space-around;
-    align-items: center;
-    font-family: "OpenSans-Light";
-    width: 100%;
-    
+    align-items: flex-start;
+    font-family: "OpenSans";
+    margin-bottom: 20px; 
 }
 
-a {
+.list {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+.list a, .list p{
+    font-size: 12px;
+    margin-top: 5px;
     text-decoration: none;
-    color: black;
+    color: #91898d;    
 }
-
-li {
-    list-style-type: none;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-strong {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-
-.debutfooter {
-    font-family: "OpenSans-Light";
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    margin-top: -130px;
-    padding-top: -130px;
-
-}
-
-.img {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-top: -30px;
-    
-    
-}
-
-#cadenas {
-    margin-left: 50px;
-   
-}
-#iphone {
-    margin-right: 250px;
-}
-#smile {
-    margin-right: 90px;
-    
-}
-#camion {
-    margin-left: 70px;
-    
-}
-
-#trait_dessus { 
-    border-top: 0.5px  grey; 
-    width : 100%;
-    margin-top: 50px;
-    height: 55px;
+.list h2 {
+    color: #666565;
+    font-family: "OpenSans"; 
 }
