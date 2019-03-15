@@ -226,34 +226,85 @@ body {
 
 /* classe des vignettes */
 .vignettes {
+    position: relative;
     flex-direction: column;
     width: 30%;
-    height: 70px;
+    height: 400px;
     margin-right: 15px;
     margin-left: 15px; 
 }
 
 /* boutons des vignettes */
-.vignettes input {
-    position: relative;
-    left: 35%;
-    bottom: 100%;
-    background: #646567;
-    width: 30%;
+.vignettes a {
+    position: absolute;
+    bottom: 50px;
+    left : calc(50% - 60px);
+    background: white;
+    width: 120px;
     padding: 2%;
-    color: white;
-    border: 1px solid white;
-    height: 60px;
+    border: 1px solid #646567 ;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s linear;
+    overflow: hidden;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
-/* lors du passege de la souris sur une vignette change son bouton */
-.vignettes:hover input{
-    background: white;
+/* texte du lien dans les vignettes*/
+.text_decou {
+    font-family: 'Open Sans',sans-serif;
+    color: white;
+    z-index: 1;
+    transition: 0.3s linear;
+}
+
+
+/* divs qui cache le lien pour l'animation des liens */
+.vignettes a::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    background-color: #646567;
+    width: 65px;
+    height: 160px;
+    transform: rotate(-45deg);
+    transition: 0.3s linear;
+
+}
+.vignettes a::before {
+    position: absolute;
+    content: "";
+    left: 71px;
+    background-color: #646567;
+    width: 65px;
+    height: 160px;
+    transform: rotate(-45deg);
+    transition: 0.3s linear;
+}
+
+/* changement lors du passage de la souris sur une vignette */
+.vignettes:hover p{
     color: #646567;
 }
+.vignettes:hover a::after{
+    transform: translateX(-150px);
+}
+.vignettes:hover a::before{
+    transform: translateX(150px);
+    
+}
+
+/* image des vignettes*/
 .vignettes img {
     height: 400px;
 }
+
 
 /*___________________*/
 /*    Plein Phare    */
@@ -263,7 +314,6 @@ body {
 #plein_phare {
     width: 94%;
     border-top: 0.5px ridge #adadad;
-    margin-top: 25%;
     flex-direction: column;
     text-align: center;
 }
@@ -324,9 +374,12 @@ body {
 /*            FOOTER              */
 /**********************************/
 
+/* image du camion sur le bandeau superieur du footer */
 #camion{
     margin-right: 10px;
 }
+
+/* Bandeau superieur du footer*/
 .debutfooter {
     margin-top: 30px;
     justify-content: space-around;
@@ -337,17 +390,19 @@ body {
     border-bottom: 0.5px ridge #e2dee0ab;
 }
 
+/* element qui forme le bandeau */
 .banniere_footer {
     font: 500 15px 'Open Sans',sans-serif;
     text-decoration: none;
     color: #666565;
     width: 20%;
 }
+/* images de la banniere */
 .banniere_footer img {
     width: 15%;
-   
 }
 
+/* bas du footer */
 .footer {
     margin-top: 10px;
     justify-content: space-around;
@@ -356,19 +411,164 @@ body {
     margin-bottom: 20px; 
 }
 
+/* contenants des liens du footer */
 .list {
     text-align: center;
     flex-direction: column;
     justify-content: center;
     width: 30%;
 }
+
+/* Lien et P du footer */
 .list a, .list p{
     font-size: 12px;
     margin-top: 5px;
     text-decoration: none;
     color: #91898d;    
 }
+
+/* titres du footer */
 .list h2 {
     color: #666565;
     font-family: "OpenSans"; 
+}
+
+
+/**********************************/
+/*         PAGE PRODUIT           */
+/**********************************/
+/* Parametre de la page produit */
+#page {
+    margin-right: auto;
+    margin-left: auto;
+    width:75%;
+}
+.page{
+    
+}
+
+/* Arbre en haut */
+#arbre{
+    display:flex;
+    color:cornflowerblue;
+}
+#arbre > a{
+    text-decoration: none;
+    color: #91898d;
+}
+
+#desctotal {
+    width: 100%;
+}
+/* Caroussel */
+#slider-nav > img{
+    height:80px; 
+    width:80px;
+}
+#thumbs_list a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(145,137,141,0.3);
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.slick-dots li button {
+    display: none;
+}
+
+#caroussel{
+    width: 35%;
+    float:left;
+}
+/* Bouton en bas du caroussel */
+.slick-slide-control10{
+    visibility: hidden;
+}
+
+.slider-for{
+        position: relative;
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        border: 1px solid rgba(145,137,141,0.3);
+        background: #fff;
+}
+    
+
+/* Description du produit */
+.descprod > h1{
+    font-size: 53px;
+}
+.descprod{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border: 1px dashed rgba(145,137,141,0.3);
+    padding: 20px 40px;
+    float: right;
+}
+.descprod > *{
+    margin-top: 20px;
+}
+.descprod > img{
+    width:264px;
+}
+#prix{
+    font-size: 25px;
+    
+}
+.description{
+    
+    width:100%;
+}
+.description > h2{
+    text-align: center; 
+    margin-bottom:40px;   
+}
+/* Select Color */
+
+fieldset {
+    border:none;
+}
+#attributes .attribute_list #color_to_pick_list li a.color_pick {
+    display: block;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+
+#attributes .attribute_list #color_to_pick_list li {
+    float: left;
+    margin: 0 3px 3px 0;
+    padding: 1px;
+    border: 1px solid #d6d4d4;
+    width: 26px;
+    height: 26px;
+}
+#attributes .attribute_list #color_to_pick_list {
+    list-style-type: none;
+}
+#nbre{
+    padding: 20px;
+    background: #f9f6ed;
+    margin-bottom: 12px;
+}
+/* Ajouter au panier */
+.exclusive{
+    display: block;
+    width: 100%;
+    background: #ff6b00;
+    padding: 17px;
+    color: #fff;
+    text-align: center;
+    transition: 0.2s;
+    font: 500 22px 'Amaranth',sans-serif;
+}
+
+.clearfix{
+    display:flex;
 }
