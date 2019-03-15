@@ -243,6 +243,7 @@ body {
     padding: 2%;
     color: white;
     border: 1px solid white;
+    height: 60px;
 }
 
 /* lors du passege de la souris sur une vignette change son bouton */
