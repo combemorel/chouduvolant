@@ -9,6 +9,7 @@
     width: 100%;
 }
 
+/* Body */
 body {
     display: flex;
     justify-content: center;
@@ -248,6 +249,9 @@ body {
 .vignettes:hover input{
     background: white;
     color: #646567;
+}
+.vignettes img {
+    height: 350px;
 }
 
 /*___________________*/
