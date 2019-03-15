@@ -374,6 +374,21 @@ body {
 /*            FOOTER              */
 /**********************************/
 
+/* lien de retour vers le haut */
+#ancre {
+    position: fixed;
+    z-index: 1000;
+    bottom: 50px;
+    left: 95%;
+    
+}
+.hidden {
+    visibility: hidden;
+}
+#ancre img {
+    width: 30px;
+    height: 30px;
+}
 /* image du camion sur le bandeau superieur du footer */
 #camion{
     margin-right: 10px;

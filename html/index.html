@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../slick/slick-theme.css"/>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body id="haut">
     <header id="head" class="flex">
         <div id="banniere" class="flex">
             <p>Jouets en bois design, bascules bébé et porteurs bébé fabriqués en France</p>
@@ -168,11 +168,35 @@
                 <p>Tél : 02 23 24 84 91</p>
                 <p>Mail : contact@chouduvolant.com</p> 
             </div> 
-    </footer>
+        </footer>
+        <a href="#haut" id="ancre" class="hidden"><img src="../img/boutton.png" alt="image de retour vers le haut"></a>
     
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+       
     <script src="../slick/slick.min.js"></script>
     <script src="../js/carrou.js"></script>
+    <script>
+        $('a[href*="#"]').click(function (){
+            var the_id = $(this).attr('href');
+
+            $('html, body').animate({
+                scrollTop: $(the_id).offset().top
+            }, 1000);
+        });
+        window.onscroll = function() {
+            var buttumHaut = document.getElementById('ancre');
+            var position_scroll = document.scrollingElement.scrollTop
+
+            if(position_scroll >= 180) {
+                buttumHaut.classList.remove('hidden');
+            } else {
+                head.classList.remove('fix');
+                buttumHaut.classList.add('hidden');
+            }
+        };
+    </script>
 </body>
 </html>
